@@ -1,0 +1,8 @@
+{%extends "layout.html"%}
+{%block content%}
+{% for post in posts%}
+<h1>{{post.Heading}}</h1>
+<p> Owner {{post.Name}} wrote {{post.Content_Type}}</p>
+<p> Dated On {{post.Date}}
+    {% endfor %}
+    {%endblock content%}    
